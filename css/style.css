@@ -90,6 +90,8 @@ img {
 .main .books .book .frame {
   width: 150px;
   height: 200px;
+
+  overflow: hidden;
 }
 
 .main .books .book .info {
