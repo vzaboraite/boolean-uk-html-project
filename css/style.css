@@ -1,0 +1,99 @@
+/* General styles */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+}
+
+.container {
+  display: grid;
+  grid-template:
+    "header" 60px
+    "main" 1fr
+    "footer" 60px /
+    1fr;
+}
+
+img {
+  width: 100%;
+  object-fit: cover;
+}
+
+.header,
+.footer {
+  background-color: rgb(14 35 15 / 75%);
+
+  color: whitesmoke;
+  font-weight: 900;
+}
+
+.header {
+  grid-area: header;
+  align-items: center;
+}
+
+.header .frame {
+  width: 200px;
+}
+
+.main {
+  grid-area: main;
+
+  overflow-y: scroll;
+}
+
+.footer {
+  grid-area: footer;
+
+  display: grid;
+  place-content: center;
+}
+
+/* Styles for Home/index page */
+
+.main .books {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 300px));
+  gap: 30px;
+
+  justify-content: center;
+  align-content: center;
+}
+
+.main .books .book.wrapper {
+  box-shadow: 1px 1px 2px 1px #00000010;
+  padding: 5px;
+}
+
+.main .books .book .frame {
+  width: 150px;
+  height: 200px;
+}
+
+.main .books .book .info {
+  display: grid;
+  justify-content: start;
+  align-content: center;
+}
+
+.main .books .book .info > * {
+  margin-bottom: 5px;
+}
+
+.main .books .book .info .title {
+  font-size: 20px;
+}
+
+.main .books .book .info .author {
+  font-size: 14px;
+  font-weight: 900;
+  text-transform: uppercase;
+  color: grey;
+}
+
+.main .books .book .info .additional-text {
+  font-size: 14px;
+}

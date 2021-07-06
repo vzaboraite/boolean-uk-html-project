@@ -1,0 +1,24 @@
+.two-col-grid {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 10px;
+}
+
+.two-col-grid__expand-two {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 10px;
+}
+
+.grid-auto__column {
+  display: grid;
+  grid-auto-flow: column;
+  gap: 10px;
+}
+
+.center {
+  max-width: 1000px;
+
+  margin: 0 auto;
+  padding: 0 1rem;
+}
