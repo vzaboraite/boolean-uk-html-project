@@ -38,6 +38,7 @@ img {
 .header .brand {
   display: grid;
   grid-auto-flow: column;
+  gap: 10px;
 
   justify-content: start;
   align-content: center;
@@ -117,4 +118,39 @@ img {
 
 .main .books .book .info .additional-text {
   font-size: 14px;
+}
+
+/* Styles for Book page */
+
+.main .cards {
+  display: grid;
+
+  grid-template-columns: repeat(auto-fit, minmax(150px, 200px));
+  gap: 30px;
+
+  justify-content: center;
+  align-content: center;
+}
+
+.main .cards .wrapper {
+  width: 200px;
+}
+
+.main .cards .card .difficulty {
+  display: grid;
+  place-content: end;
+  gap: 10px;
+
+  padding-right: 5px;
+
+  font-weight: 900;
+  color: goldenrod;
+}
+
+.main .cards .card .difficulty > * {
+}
+
+.main .cards .card .board {
+  width: 200px;
+  height: 200px;
 }
