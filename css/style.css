@@ -230,14 +230,10 @@ img {
   height: 600px;
 
   display: grid;
-  grid-auto-flow: row;
+  grid-template-columns: repeat(8, 1fr);
+  grid-template-rows: repeat(8, 1fr);
 
   border: 2px solid black;
-}
-
-.main.exercise-page .board-container .row {
-  display: grid;
-  grid-auto-flow: column;
 }
 
 .main.exercise-page .board-container .light-square {
