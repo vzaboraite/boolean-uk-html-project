@@ -213,7 +213,7 @@ img {
   /* center container */
   max-width: 1200px;
   margin: 0 auto;
-  padding: 1rem;
+  padding: 0 1rem;
 
   display: grid;
   justify-items: center;
@@ -229,7 +229,27 @@ img {
   width: 600px;
   height: 600px;
 
+  display: grid;
+  grid-auto-flow: row;
+
   border: 2px solid black;
+}
+
+.main.exercise-page .board-container .row {
+  display: grid;
+  grid-auto-flow: column;
+}
+
+.main.exercise-page .board-container .light-square {
+  width: 100%;
+  height: 100%;
+  background-color: #f5deb385;
+}
+
+.main.exercise-page .board-container .dark-square {
+  width: 100%;
+  height: 100%;
+  background-color: rgb(14 35 15 / 75%);
 }
 
 .main.exercise-page .answer-container {
