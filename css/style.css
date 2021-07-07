@@ -122,6 +122,61 @@ img {
 
 /* Styles for Book page */
 
+.main .offer-wrapper {
+  padding: 20px 0;
+
+  display: grid;
+  place-content: center;
+
+  box-shadow: 1px 1px 10px 1px #00000050;
+}
+
+.main .offer-wrapper .book .frame {
+  width: 100px;
+  height: 150px;
+
+  overflow: hidden;
+
+  box-shadow: 0px 0px 8px 2px #00000050;
+}
+
+.main .offer-wrapper .book .info {
+  display: grid;
+  justify-content: start;
+  align-content: center;
+}
+
+.main .offer-wrapper .book .info > * {
+  margin-bottom: 8px;
+}
+
+.main .offer-wrapper .book .info .title {
+  font-size: 20px;
+}
+
+.main .offer-wrapper .book .info .author {
+  margin-bottom: 20px;
+
+  font-size: 14px;
+  font-weight: 900;
+
+  color: grey;
+  text-transform: uppercase;
+}
+
+.main .offer-wrapper .book .info .offer-text {
+  color: grey;
+
+  font-size: 14px;
+}
+
+.main .offer-wrapper .book .info .offer-text .link-text {
+  color: rgb(14 35 15 / 75%);
+
+  font-size: 16px;
+  font-weight: 900;
+}
+
 .main .cards {
   display: grid;
 
@@ -145,9 +200,6 @@ img {
 
   font-weight: 900;
   color: goldenrod;
-}
-
-.main .cards .card .difficulty > * {
 }
 
 .main .cards .card .board {
