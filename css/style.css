@@ -225,6 +225,7 @@ img {
   margin: 40px 0;
 }
 
+/* Chess board styles */
 .main.exercise-page .board-container {
   width: 600px;
   height: 600px;
@@ -246,6 +247,28 @@ img {
   width: 100%;
   height: 100%;
   background-color: rgb(14 35 15 / 75%);
+}
+
+.main.exercise-page .board-container .square {
+  display: grid;
+  place-content: center;
+  place-items: center;
+}
+
+.main.exercise-page .board-container .chess-piece {
+  font-size: 3.5vw;
+
+  font-family: FreeSerif;
+}
+
+.main.exercise-page .description {
+  padding-top: 10px;
+
+  text-align: center;
+
+  font-style: italic;
+  font-weight: 900;
+  font-size: 20px;
 }
 
 .main.exercise-page .answer-container {
