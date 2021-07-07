@@ -206,3 +206,35 @@ img {
   width: 200px;
   height: 200px;
 }
+
+/* Styles for exercise page */
+
+.main.exercise-page .exercise-wrapper {
+  /* center container */
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1rem;
+
+  display: grid;
+  justify-items: center;
+
+  gap: 30px;
+}
+
+.main.exercise-page .page-title {
+  margin: 40px 0;
+}
+
+.main.exercise-page .board-container {
+  width: 600px;
+  height: 600px;
+
+  border: 2px solid black;
+}
+
+.main.exercise-page .answer-container {
+  width: 400px;
+  height: 200px;
+
+  border: 2px dotted green;
+}
