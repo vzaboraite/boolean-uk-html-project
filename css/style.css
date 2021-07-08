@@ -231,7 +231,7 @@ img {
   margin: 40px 0;
 }
 
-/* Chess board styles */
+/* Chess board container styles in exercise page */
 .main.exercise-page .board-container {
   width: 600px;
   height: 600px;
@@ -240,7 +240,23 @@ img {
   grid-template-columns: repeat(8, 1fr);
   grid-template-rows: repeat(8, 1fr);
 
-  border: 2px solid black;
+  box-shadow: 1px 1px 10px 1px #000;
+}
+
+.main.exercise-page .board-container .square.marked {
+  position: relative;
+}
+
+.main.exercise-page .board-container .square-mark.number {
+  position: absolute;
+
+  left: 1px;
+}
+
+.main.exercise-page .board-container .square-mark.letter {
+  position: absolute;
+
+  bottom: 1px;
 }
 
 .main.exercise-page .board-container .chess-piece {
