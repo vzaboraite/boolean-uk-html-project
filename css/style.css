@@ -24,7 +24,7 @@ img {
 
 .header,
 .footer {
-  background-color: rgb(14 35 15 / 75%);
+  background-color: #495a4b;
 
   color: whitesmoke;
   font-weight: 900;
@@ -237,6 +237,12 @@ img {
   border: 2px solid black;
 }
 
+.main.exercise-page .board-container .square {
+  display: grid;
+  place-content: center;
+  place-items: center;
+}
+
 .main.exercise-page .board-container .light-square {
   width: 100%;
   height: 100%;
@@ -246,19 +252,24 @@ img {
 .main.exercise-page .board-container .dark-square {
   width: 100%;
   height: 100%;
-  background-color: rgb(14 35 15 / 75%);
-}
-
-.main.exercise-page .board-container .square {
-  display: grid;
-  place-content: center;
-  place-items: center;
+  background-color: #495a4b;
 }
 
 .main.exercise-page .board-container .chess-piece {
-  font-size: 3.5vw;
+  /* allows chess piece to be responsive, since it is html decimal code at the moment. */
+  font-size: 3vw;
 
   font-family: FreeSerif;
+}
+
+.main.exercise-page .board-container .light-piece {
+  color: #fff;
+  text-shadow: 0 0 3px #000;
+}
+
+.main.exercise-page .board-container .dark-piece {
+  color: #000;
+  text-shadow: 0 0 3px #fff;
 }
 
 .main.exercise-page .description {
