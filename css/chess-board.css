@@ -1,0 +1,31 @@
+.square {
+  display: grid;
+  place-content: center;
+  place-items: center;
+}
+
+.light-square {
+  width: 100%;
+  height: 100%;
+  background-color: #f5deb385;
+}
+
+.dark-square {
+  width: 100%;
+  height: 100%;
+  background-color: #495a4b;
+}
+
+.chess-piece {
+  font-family: FreeSerif;
+}
+
+.light-piece {
+  color: #fff;
+  text-shadow: 0 0 3px #000;
+}
+
+.dark-piece {
+  color: #000;
+  text-shadow: 0 0 3px #fff;
+}

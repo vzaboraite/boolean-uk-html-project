@@ -180,15 +180,11 @@ img {
 .main .cards {
   display: grid;
 
-  grid-template-columns: repeat(auto-fit, minmax(150px, 200px));
+  grid-template-columns: repeat(auto-fit, minmax(150px, 300px));
   gap: 30px;
 
-  justify-content: center;
-  align-content: center;
-}
-
-.main .cards .wrapper {
-  width: 200px;
+  place-content: center;
+  place-items: center;
 }
 
 .main .cards .card .difficulty {
@@ -203,8 +199,18 @@ img {
 }
 
 .main .cards .card .board {
-  width: 200px;
-  height: 200px;
+  width: 300px;
+  height: 300px;
+
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  grid-template-rows: repeat(8, 1fr);
+
+  box-shadow: 1px 1px 10px #000;
+}
+
+.main .cards .card .board .chess-piece {
+  font-size: 22px;
 }
 
 /* Styles for exercise page */
@@ -237,39 +243,8 @@ img {
   border: 2px solid black;
 }
 
-.main.exercise-page .board-container .square {
-  display: grid;
-  place-content: center;
-  place-items: center;
-}
-
-.main.exercise-page .board-container .light-square {
-  width: 100%;
-  height: 100%;
-  background-color: #f5deb385;
-}
-
-.main.exercise-page .board-container .dark-square {
-  width: 100%;
-  height: 100%;
-  background-color: #495a4b;
-}
-
 .main.exercise-page .board-container .chess-piece {
-  /* allows chess piece to be responsive, since it is html decimal code at the moment. */
-  font-size: 3vw;
-
-  font-family: FreeSerif;
-}
-
-.main.exercise-page .board-container .light-piece {
-  color: #fff;
-  text-shadow: 0 0 3px #000;
-}
-
-.main.exercise-page .board-container .dark-piece {
-  color: #000;
-  text-shadow: 0 0 3px #fff;
+  font-size: 65px;
 }
 
 .main.exercise-page .description {
