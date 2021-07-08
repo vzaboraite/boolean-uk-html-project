@@ -263,6 +263,7 @@ img {
   font-size: 65px;
 }
 
+/* Exercise description below the chess board */
 .main.exercise-page .description {
   padding-top: 10px;
 
@@ -273,9 +274,68 @@ img {
   font-size: 20px;
 }
 
-.main.exercise-page .answer-container {
-  width: 400px;
-  height: 200px;
+/* Hidden answer card styles */
+.main.exercise-page .answer-card {
+  padding: 10px;
 
-  border: 2px dotted green;
+  display: grid;
+  align-content: center;
+
+  width: 330px;
+  height: 300px;
+
+  position: relative;
+}
+
+.main.exercise-page .answer-card .card-side {
+  display: grid;
+  place-content: center;
+
+  width: 100%;
+  height: 100%;
+
+  border-radius: 3px;
+  box-shadow: 0 0 10px 1px #00000060;
+
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  backface-visibility: hidden;
+
+  transition: all 0.7s;
+}
+
+.main.exercise-page .answer-card .card-description {
+  text-align: center;
+}
+
+.main.exercise-page .answer-card .card-side.front {
+  z-index: 1;
+  background-color: whitesmoke;
+}
+
+.main.exercise-page .answer-card .card-side.front .card-description {
+  font-size: 2rem;
+}
+
+/* :hover front */
+.main.exercise-page .answer-card:hover .card-side.front {
+  transform: rotateY(180deg);
+}
+
+.main.exercise-page .answer-card .card-side.back {
+  transform: rotateY(-180deg);
+  background-color: whitesmoke;
+}
+
+.main.exercise-page .answer-card .card-side.back .card-description p {
+  margin-bottom: 10px;
+
+  line-height: 1.5;
+}
+
+/* :hover back */
+.main.exercise-page .answer-card:hover .card-side.back {
+  transform: rotateY(0deg);
 }
