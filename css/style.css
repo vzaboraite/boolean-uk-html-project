@@ -339,3 +339,70 @@ img {
 .main.exercise-page .answer-card:hover .card-side.back {
   transform: rotateY(0deg);
 }
+
+/* Registerpage/form styles */
+
+.register-page .center-text {
+  text-align: center;
+}
+
+.register-page .registration-form {
+  padding: 20px;
+}
+
+.register-page .registration-form > * {
+  width: 100%;
+}
+
+.register-page .registration-form input,
+.register-page .registration-form select,
+.register-page .registration-form textarea {
+  display: block;
+
+  padding: 0 5px 10px;
+  margin-bottom: 30px;
+
+  font-size: 20px;
+
+  line-height: 1.5;
+
+  border: none;
+  border-bottom: 1px solid #00000030;
+}
+
+.register-page .registration-form label {
+  display: block;
+
+  margin-bottom: 10px;
+
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.register-page .registration-form .radio-button {
+  display: inline-block;
+
+  margin-bottom: 10px;
+}
+
+.register-page .registration-form .radio-button .radio > * {
+  display: inline-block;
+
+  margin-bottom: 10px;
+}
+
+.register-page .registration-form .radio-button .radio label {
+  font-weight: 500;
+}
+
+.register-page .registration-form textarea {
+  resize: vertical;
+
+  min-height: 200px;
+}
+
+.register-page .registration-form .checkbox > * {
+  display: inline-block;
+
+  margin: 0 5px 10px;
+}
