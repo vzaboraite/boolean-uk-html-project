@@ -1,6 +1,5 @@
-# boolean-uk-html-project
+# Chess Tactics App
 
-TODO checklist every time starting work on new page:
+Chess Tactics - personal html/css project, that is a prototype for practicing tactics in chess game.
 
-1. Check if style files are linked properly to the page;
-2. Check if internal page links are added properly to the right place of navigation;
+Live demo: https://vzaboraite.github.io/boolean-uk-html-project/
