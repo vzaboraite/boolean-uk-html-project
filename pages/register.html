@@ -38,6 +38,282 @@
       <p class="center-text margin-bottom-10">
         Please fill in this form to create an account.
       </p>
+
+      <form class="registration-form">
+        <label for="name">Name: </label>
+        <input
+          type="text"
+          name="name"
+          id="name"
+          placeholder="Your name"
+          min="3"
+          required
+        />
+
+        <label for="username">Username: </label>
+        <input
+          type="text"
+          name="username"
+          id="username"
+          placeholder="Enter username"
+          min="3"
+          required
+        />
+
+        <label for="email">Email: </label>
+        <input
+          type="email"
+          name="email"
+          id="email"
+          placeholder="Enter your e-mail"
+          required
+        />
+
+        <label for="country">Country: </label>
+        <select name="country" id="country" required>
+          <option value="">--From which country are you?--</option>
+          <option value="Afg">Afghanistan</option>
+          <option value="Alb">Albania</option>
+          <option value="Alg">Algeria</option>
+          <option value="And">Andorra</option>
+          <option value="Ang">Angola</option>
+          <option value="Ant">Antigua and Barbuda</option>
+          <option value="Arg">Argentina</option>
+          <option value="Arm">Armenia</option>
+          <option value="Aus">Australia</option>
+          <option value="Aus">Austria</option>
+          <option value="Aze">Azerbaijan</option>
+          <option value="Bad">Baden</option>
+          <option value="Bah">Bahamas</option>
+          <option value="Ban">Bangladesh</option>
+          <option value="Bar">Barbados</option>
+          <option value="Bel">Belarus</option>
+          <option value="Bel">Belgium</option>
+          <option value="Ben">Benin</option>
+          <option value="Bol">Bolivia</option>
+          <option value="Bos">Bosnia and Herzegovina</option>
+          <option value="Bot">Botswana</option>
+          <option value="Bra">Brazil</option>
+          <option value="Bru">Brunei</option>
+          <option value="Bul">Bulgaria</option>
+          <option value="Bur">Burma</option>
+          <option value="Cab">Cabo Verde</option>
+          <option value="Cam">Cambodia</option>
+          <option value="Cam">Cameroon</option>
+          <option value="Can">Canada</option>
+          <option value="Cay">Cayman Islands</option>
+          <option value="Cha">Chad</option>
+          <option value="Chi">Chile</option>
+          <option value="Chi">China</option>
+          <option value="Col">Colombia</option>
+          <option value="Com">Comoros</option>
+          <option value="Con">Congo</option>
+          <option value="Cos">Costa Rica</option>
+          <option value="Cot">Cote d’Ivoire (Ivory Coast)</option>
+          <option value="Cro">Croatia</option>
+          <option value="Cub">Cuba</option>
+          <option value="Cyp">Cyprus</option>
+          <option value="Cze">Czechia</option>
+          <option value="Den">Denmark</option>
+          <option value="Dji">Djibouti</option>
+          <option value="Dom">Dominica</option>
+          <option value="Ecu">Ecuador</option>
+          <option value="Egy">Egypt</option>
+          <option value="El ">El Salvador</option>
+          <option value="Eri">Eritrea</option>
+          <option value="Est">Estonia</option>
+          <option value="Esw">Eswatini</option>
+          <option value="Eth">Ethiopia</option>
+          <option value="Fij">Fiji</option>
+          <option value="Fin">Finland</option>
+          <option value="Fra">France</option>
+          <option value="Gab">Gabon</option>
+          <option value="Gam">Gambia</option>
+          <option value="Geo">Georgia</option>
+          <option value="Ger">Germany</option>
+          <option value="Gha">Ghana</option>
+          <option value="Gre">Greece</option>
+          <option value="Gre">Grenada</option>
+          <option value="Gua">Guatemala</option>
+          <option value="Gui">Guinea</option>
+          <option value="Guy">Guyana</option>
+          <option value="Hai">Haiti</option>
+          <option value="Han">Hanover</option>
+          <option value="Haw">Hawaii</option>
+          <option value="Hon">Honduras</option>
+          <option value="Hun">Hungary</option>
+          <option value="Ice">Iceland</option>
+          <option value="Ind">India</option>
+          <option value="Ind">Indonesia</option>
+          <option value="Ira">Iran</option>
+          <option value="Ira">Iraq</option>
+          <option value="Ire">Ireland</option>
+          <option value="Isr">Israel</option>
+          <option value="Ita">Italy</option>
+          <option value="Jam">Jamaica</option>
+          <option value="Jap">Japan</option>
+          <option value="Jor">Jordan</option>
+          <option value="Kaz">Kazakhstan</option>
+          <option value="Ken">Kenya</option>
+          <option value="Kir">Kiribati</option>
+          <option value="Kor">Korea</option>
+          <option value="Kos">Kosovo</option>
+          <option value="Kuw">Kuwait</option>
+          <option value="Kyr">Kyrgyzstan</option>
+          <option value="Lao">Laos</option>
+          <option value="Lat">Latvia</option>
+          <option value="Leb">Lebanon</option>
+          <option value="Les">Lesotho</option>
+          <option value="Lib">Liberia</option>
+          <option value="Lib">Libya</option>
+          <option value="Lie">Liechtenstein</option>
+          <option value="Lit">Lithuania</option>
+          <option value="Lux">Luxembourg</option>
+          <option value="Mad">Madagascar</option>
+          <option value="Mal">Malawi</option>
+          <option value="Mal">Malaysia</option>
+          <option value="Mal">Maldives</option>
+          <option value="Mal">Mali</option>
+          <option value="Mal">Malta</option>
+          <option value="Mar">Marshall Islands</option>
+          <option value="Mau">Mauritania</option>
+          <option value="Mau">Mauritius</option>
+          <option value="Mex">Mexico</option>
+          <option value="Mic">Micronesia</option>
+          <option value="Mol">Moldova</option>
+          <option value="Mon">Monaco</option>
+          <option value="Mon">Mongolia</option>
+          <option value="Mon">Montenegro</option>
+          <option value="Mor">Morocco</option>
+          <option value="Moz">Mozambique</option>
+          <option value="Nam">Namibia</option>
+          <option value="Nau">Nauru</option>
+          <option value="Nep">Nepal</option>
+          <option value="Net">Netherlands</option>
+          <option value="New">New Zealand</option>
+          <option value="Nic">Nicaragua</option>
+          <option value="Nig">Niger</option>
+          <option value="Nig">Nigeria</option>
+          <option value="Nor">Norway</option>
+          <option value="Oma">Oman</option>
+          <option value="Pak">Pakistan</option>
+          <option value="Pal">Palau</option>
+          <option value="Pan">Panama</option>
+          <option value="Pap">Papua New Guinea</option>
+          <option value="Par">Paraguay</option>
+          <option value="Per">Peru</option>
+          <option value="Phi">Philippines</option>
+          <option value="Pol">Poland</option>
+          <option value="Por">Portugal</option>
+          <option value="Qat">Qatar</option>
+          <option value="Con">Congo</option>
+          <option value="Rom">Romania</option>
+          <option value="Rus">Russia</option>
+          <option value="Rwa">Rwanda</option>
+          <option value="Sai">Saint Lucia</option>
+          <option value="Sam">Samoa</option>
+          <option value="San">San Marino</option>
+          <option value="Sao">Sao Tome and Principe</option>
+          <option value="Sau">Saudi Arabia</option>
+          <option value="Sen">Senegal</option>
+          <option value="Ser">Serbia</option>
+          <option value="Sey">Seychelles</option>
+          <option value="Sie">Sierra Leone</option>
+          <option value="Sin">Singapore</option>
+          <option value="Slo">Slovakia</option>
+          <option value="Slo">Slovenia</option>
+          <option value="Sol">Solomon Islands</option>
+          <option value="Som">Somalia</option>
+          <option value="Sou">South Africa</option>
+          <option value="Spa">Spain</option>
+          <option value="Sri">Sri Lanka</option>
+          <option value="Swe">Sweden</option>
+          <option value="Swi">Switzerland</option>
+          <option value="Syr">Syria</option>
+          <option value="Taj">Tajikistan</option>
+          <option value="Tha">Thailand</option>
+          <option value="Tog">Togo</option>
+          <option value="Tun">Tunisia</option>
+          <option value="Tur">Turkey</option>
+          <option value="Tur">Turkmenistan</option>
+          <option value="Uga">Uganda</option>
+          <option value="Ukr">Ukraine</option>
+          <option value="Uni">United Arab Emirates</option>
+          <option value="Uni">United Kingdom</option>
+          <option value="Uru">Uruguay</option>
+          <option value="Uzb">Uzbekistan</option>
+          <option value="Ven">Venezuela</option>
+          <option value="Vie">Vietnam</option>
+          <option value="Yem">Yemen</option>
+          <option value="Zam">Zambia</option>
+          <option value="Zim">Zimbabwe</option>
+          <option value="other">Other...</option>
+        </select>
+        <div class="radio-button">
+          <input
+            type="radio"
+            id="beginner"
+            name="chess-knowledge-level"
+            value="beginner"
+            checked
+          />
+          <label for="beginner">Beginner</label>
+
+          <input
+            type="radio"
+            id="intermediate"
+            name="chess-knowledge-level"
+            value="intermediate"
+          />
+          <label for="intermediate">Intermediate</label>
+
+          <input
+            type="radio"
+            id="expert"
+            name="chess-knowledge-level"
+            value="expert"
+          />
+          <label for="expert">Expert</label>
+        </div>
+
+        <label for="intro">Your chess story: </label>
+        <textarea
+          name="intoduction"
+          id="intro"
+          cols="30"
+          rows="10"
+          placeholder="Tell us shortly about your journey..."
+        ></textarea>
+
+        <label for="password">Password: </label>
+        <input
+          type="password"
+          name="password"
+          id="password"
+          placeholder="Enter your password"
+          minlength="8"
+          maxlength="12"
+          required
+        />
+
+        <label for="password-confirm">Confirm password: </label>
+        <input
+          type="password"
+          name="password"
+          id="password-confirm"
+          placeholder="Repeat your password"
+          minlength="8"
+          maxlength="12"
+          required
+        />
+
+        <input type="checkbox" name="terms&conditions" id="ts&cs" required />
+        <label for="ts&cs"
+          >I confirm, that I accept with Terms & Conditions.</label
+        >
+
+        <input type="submit" value="Sign Up" />
+      </form>
     </main>
     <footer class="footer place-content__center padding-10">
       Created with &#10084; by Viktorija
