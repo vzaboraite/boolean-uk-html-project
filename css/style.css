@@ -340,14 +340,23 @@ img {
   transform: rotateY(0deg);
 }
 
-/* Registerpage/form styles */
+/* Register page/form styles */
+
+.register-page .form-wrapper {
+  margin-bottom: 50px;
+  margin-top: 30px;
+  box-shadow: 1px 1px 10px 1px #00000050;
+}
 
 .register-page .center-text {
   text-align: center;
 }
 
 .register-page .registration-form {
-  padding: 20px;
+  padding: 50px;
+
+  /* display:grid for placing 'Sign up' button in the middle */
+  display: grid;
 }
 
 .register-page .registration-form > * {
@@ -369,13 +378,50 @@ img {
   border: none;
   border-bottom: 1px solid #00000030;
 }
+.register-page .registration-form select {
+  outline: none;
+
+  background-color: transparent;
+
+  color: grey;
+}
+
+.register-page .registration-form select option[value=""] {
+  font-size: 16px;
+}
+
+.register-page .registration-form input:focus,
+.register-page .registration-form textarea:focus {
+  outline: none;
+}
+
+.register-page .registration-form input::-webkit-input-placeholder,
+.register-page .registration-form textarea::-webkit-input-placeholder {
+  padding: 10px;
+
+  font-size: 16px;
+  color: #00000050;
+}
+
+.register-page
+  .registration-form
+  input[placeholder]:focus::-webkit-input-placeholder {
+  font-size: 16px;
+  color: transparent;
+}
+
+.register-page
+  .registration-form
+  textarea[placeholder]:focus::-webkit-input-placeholder {
+  color: transparent;
+}
 
 .register-page .registration-form label {
   display: block;
 
   margin-bottom: 10px;
 
-  font-size: 16px;
+  font-size: 14px;
   font-weight: 700;
 }
 
@@ -405,4 +451,26 @@ img {
   display: inline-block;
 
   margin: 0 5px 10px;
+}
+
+.register-page .registration-form button {
+  display: grid;
+  place-self: center;
+
+  padding: 10px 20px;
+  margin-top: 40px;
+
+  width: 30%;
+
+  border: none;
+  border-radius: 30px;
+  box-shadow: 1px 1px 10px 1px #00000050;
+
+  background-color: #495a4b;
+
+  color: whitesmoke;
+  font-size: 20px;
+  font-weight: 700;
+
+  cursor: pointer;
 }
